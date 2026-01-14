@@ -3,7 +3,7 @@ server:
 
 messaging:
   broker: activemq
-  queue: test.queue
+  queue: app.queue
 
 spring:
   application:
