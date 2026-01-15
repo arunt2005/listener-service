@@ -17,7 +17,7 @@ public class ActiveMqMessageListener {
     @JmsListener(destination = "order-queue")
     public void onMessage(OrderMessage order) {
         // The JSON is already converted back to an OrderRequest object here
-        System.out.println("Received order: " + order.getProduct() + " x" + order.getQuantity());
+        System.out.println("<<<<<< Received order: " + order + "   >>>>>>");
     }
 }
 
